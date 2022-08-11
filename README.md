@@ -10,6 +10,8 @@
 
 # Overview
 Basically, a Webapp that predicts prices of different different airlines for a chosen day.
+<br/>
+<strong>Project Domain</strong> : Machine Learning & Web Development <br />
 
 # Tech Stack
 <strong>Frontend</strong> : HTML, CSS, JavaScript <br />
