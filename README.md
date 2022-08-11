@@ -4,7 +4,6 @@
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 
-Built this project in College 2nd Year
 
 [Deployed On Heroku](https://flight-fare-predictor-20t.herokuapp.com/) <br />
 [Report](https://drive.google.com/file/d/1g2IfgkpI1ZbwvSREB_Tpnqt3QrckcEfE/view?usp=sharing) <br />
