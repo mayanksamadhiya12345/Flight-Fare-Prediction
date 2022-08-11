@@ -12,8 +12,8 @@
 Basically, a Webapp that predicts prices of different different airlines for a chosen day.
 
 # Tech Stack
-<strong>Frontrnd</strong> : HTML, CSS, JavaScript <br />
+<strong>Frontend</strong> : HTML, CSS, JavaScript <br />
 <strong>Backend</strong> : Flask, python <br />
-<strong>Important Packages Used</strong> : numpy, pandas, scikit-learn, seaborn, email, requests, re, contractions, nltk, ast, unique, index, BytesIO, dump, Flask, SQLAlchemy, CountVectorizer, TfidfVectorizer, cosine_similarity, NormalPredictor, surprise <br />
+<strong>Important Packages Used</strong> : numpy, pandas, scikit-learn, seaborn,Flask, gunicorn, Jinja2 <br />
 <strong>Other</strong> : Machine Learning, Feature engineering, Exploratory Data Analysis <br />
 <strong>Deployed on</strong> : Heroku <br />
