@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css" type="text/css">
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="padding: 0px 0px">
+        <div class="container-fluid">
+            <div class="navbar-header" style="margin-top: 10px;">
+                <h1 class=title>Flight Fare Predictor</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container px-5 py-5">
+        <form action="\predict" method="post">
+            <div class="row">
+                <div class="col mx-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">From</h5>
+                            <select name="Source" id="Source" class="stoom" required="required">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Banglore">Banglore</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col mx-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">To</h5>
+                            <!-- Destination -->
+                            <select name="Destination" id="Destination" class="stoom" required="required">
+                                <option value="Cochin">Cochin</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="New Delhi">New Delhi</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Kolkata">Kolkata</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col mx-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Departure Date</h5>
+                            <!-- Departure -->
+                            <input type="datetime-local" class="date" name="Dep_Time" id="Dep_Time" min="2021-04-30" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col mx-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Arrival Date</h5>
+                            <!-- Arrival -->
+                            <input type="datetime-local" class="date" name="Arrival_Time" id="Arrival_Time" min="2021-04-30" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col mx-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stops</h5>
+                            <!-- Total Stops -->
+                                <select name="stops" class="stoom" required="required">
+                                <option value="0">Non-Stop</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <input type="submit" value=" Start Predicting" class="btn btn-secondary">
+   
+
+        </form>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p> <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="text-align: center">{{ prediction_text }}</h2>
+        <br>
+    <table class="table">
+        <tr class="table_header">  
+           {% for header in headings %}
+            <th class="table_cell"> {{ header }} </th>
+            {% endfor %}
+        </tr>
+        {% for row in data %}
+        <tr class="table_row">
+            {% for cell in row %}
+            <td class="table_cell"> {{ cell }} </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    </p>
+    <br>
+    <footer class= "pr"> ©2021 made with ❤️ by Team-20 </footer>
+    <br>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

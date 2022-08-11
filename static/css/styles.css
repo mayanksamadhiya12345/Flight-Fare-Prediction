@@ -1,0 +1,112 @@
+body {
+    /*background-color: #4d6d9a;*/
+    text-align: center;
+    background: #ffffff;
+    background: radial-gradient(#ffffff, #f3f3f3);
+    background-image: url("../static/images/Flight_photo11.jpg");
+    background-repeat: no-repeat;
+    top: 40px;
+    background-size: 100vw;
+    
+}
+
+.container-fluid {
+    background-color: #ffffff;
+    height: 90px;
+}
+
+.navbar {
+    color: #2a77c0;
+    text-align: left;
+    font-size: 28px ;
+}
+
+.container{
+    background-color: #080f5b;
+    margin-top: 150px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.card {
+    background: #f5f5f5d7;
+    width: 180px;
+    height: 70px;
+}
+
+.card-body {
+    color: #3c4146;
+    width: 190px;
+    height: 80px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px 32px 20px 10px;
+}
+
+col mx-1{
+    width: 190px;
+    height: 70px;
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+.date{
+    width: 140px;
+    font-size: 10px;
+    height: 22px;
+}
+
+.stoom{
+    font-size: 11px;
+    width: 140px;
+    height: 22px;
+}
+
+.btn {
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin: 0;
+    text-transform: uppercase;
+    background-color: #138f55 ;
+
+  }
+
+.table{
+    border-spacing: 0;
+    background-color: #e5e2e2 ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_row:nth-child(even) {
+    background-color: #f5f5f5 ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_header {
+    text-align: center;
+    background-color: #032547;
+    color:#ffffff;
+}
+
+.table_row {
+    text-align: center;
+}
+
+.table_cell {
+    text-align: center;
+}
+
+.pr {
+    color: #140e12;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    text-align: center;
+}
